@@ -4,7 +4,7 @@
 #include <stdio.h>
 // #include <bits/stdc++.h>
 using namespace std;
-struct data{
+struct stud{
     string id;
     string name;
     int age;
@@ -13,33 +13,33 @@ struct data{
     string gender;
 };
 int i;
-data student[5];
+stud student[5];
 
 int main(){
     
     
     for (i = 0; i < 5; i++) {
-        cout << "Enter your Name ";
+        cout << "Enter Student Name: ";
         cin >> student[i].name;
         cout << endl;
         
-        cout << "Enter your Id ";
+        cout << "Enter Student Id: ";
         cin >> student[i].id;
         cout << endl;
         
-        cout << "Enter your gender F/M ";
+        cout << "Enter Student's Gender, M or F? ";
         cin >> student[i].gender;
         if (student[i].gender == "M") {
             student[i].gender = "Male";
         }else if(student[i].gender == "F"){
             student[i].gender = "Female";
         }else{
-            cout << "enter a valid gender";
+            cout << "Invalid Input, should be M or F";
             cin >> student[i].gender;
         }
         cout << endl;
         
-        cout << "Enter your score ";
+        cout << "Enter Student's Score: ";
         cin >> student[i].score;
         if (student[i].score > 80) {
             student[i].grade = 'A';
@@ -58,7 +58,7 @@ int main(){
         }
         cout << endl;
         
-        cout << "Enter your Age ";
+        cout << "Enter Student's Age ";
         cin >> student[i].age;
         cout << endl;
         cout << endl;
@@ -66,7 +66,6 @@ int main(){
     }
     
     
-    //  writing in the external file
     ofstream file;
     file.open("message.txt");
     file << "ID \t\t" << "Name \t\t" << "Age \t\t" << "Gender \t\t" << "Score \t\t" << "Grade\t\t" << endl;

@@ -1,6 +1,0 @@
-ID 		Name 		Age 		Gender 		Score 		Grade		
-123		mafkj		54		f		433		A
-1095783		mathias		23		F		90		A
-108987		Aba		16		F		89		A
-8923		esther		64		F		67		D
-2939		kojo		23		M		90		A
